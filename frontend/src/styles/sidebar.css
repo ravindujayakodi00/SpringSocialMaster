@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url(../Font/Poppins-Medium.ttf);
+  }
+  * {
+    padding: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  .sidebar-container {
+    @apply bg-white h-[100%] w-[20rem]  transition-all duration-500 fixed;
+  }
+  .sidebar {
+    @apply flex items-center mt-2 p-4 rounded-lg cursor-pointer hover:bg-purple-200 dark:hover:bg-gray-400 transition-all duration-300;
+  }
+
+  .visible {
+    transform: translateX(0);
+  }
+
+  .hidden {
+    transform: translateX(-100%);
+  }
+
+  /* Toggle B */
+  input:checked ~ .dot {
+    transform: translateX(100%);
+  }
+}

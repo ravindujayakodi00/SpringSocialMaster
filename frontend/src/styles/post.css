@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body {
+    @apply bg-gray-200;
+}
+
+body.dark {
+    background-color: #374151;
+  }
+  
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 24%;
+    margin-left: 75%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+}
+
+.createpost {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    margin-left: 50%;
+}
+
+.updatepost h1{
+    font-family: 'Sigmar', cursive;
+    @apply text-gray-700;
+}
+
+.updateform {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 49%;
+    margin-left: 24%;
+    margin-top: 2%;
+}
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    margin-left: 50%;
+}
+
+.dialog-text {
+    font-family: Poppins;
+}
+
+
